@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hossam Eldin Salah - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        
+        .resume-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+        
+        .header .title {
+            font-size: 1.3em;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .section {
+            margin-bottom: 35px;
+        }
+        
+        .section-title {
+            font-size: 1.5em;
+            color: #667eea;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .profile-text {
+            text-align: justify;
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+        
+        .experience-item, .project-item, .education-item {
+            margin-bottom: 25px;
+            border-left: 4px solid #667eea;
+            padding-left: 20px;
+        }
+        
+        .job-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        
+        .company {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        
+        .date-location {
+            color: #888;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+        
+        .description {
+            line-height: 1.6;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+        
+        .skill-item {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 16px;
+            border-radius: 25px;
+            text-align: center;
+            font-weight: 500;
+            transition: transform 0.3s ease;
+        }
+        
+        .skill-item:hover {
+            transform: translateY(-2px);
+        }
+        
+        .certificates-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        
+        .certificate-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .certificate-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .certificate-provider {
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        .languages {
+            display: flex;
+            gap: 30px;
+        }
+        
+        .language-item {
+            text-align: center;
+        }
+        
+        .language-name {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        
+        .language-level {
+            color: #666;
+            font-style: italic;
+        }
+        
+        .github-link {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .github-link:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .header {
+                padding: 30px 20px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+            
+            .skills-grid {
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            }
+            
+            .languages {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <div class="header">
+            <h1>Hossam Eldin Salah</h1>
+            <div class="title">.NET Full Stack Developer</div>
+            <div class="contact-info">
+                <div class="contact-item">📧 hossameldinsalah67@gmail.com</div>
+                <div class="contact-item">📱 +966548147647</div>
+                <div class="contact-item">📍 Taif, Saudi Arabia</div>
+                <div class="contact-item">🇪🇬 Egyptian</div>
+                <div class="contact-item">
+                    <a href="https://github.com/Salah0123" class="github-link" target="_blank">
+                        🔗 GitHub Profile
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="section">
+                <h2 class="section-title">Profile</h2>
+                <p class="profile-text">
+                    Software Engineer with comprehensive training from Information Technology Institute (ITI) in full stack .NET development. 
+                    Professional expertise in web design and development including HTML5, CSS3, Responsive Design, JavaScript, Bootstrap, 
+                    SCSS, TypeScript, and C#. Experienced in back-end technologies including Node.js, Express.js, and Web API. 
+                    Proficient in front-end technologies including React.js with Redux state management. Knowledgeable in database 
+                    design and implementation with MongoDB and SQL Server. Strong foundation in OOP, data structures, and algorithms.
+                </p>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Experience</h2>
+                
+                <div class="experience-item">
+                    <div class="job-title">Full Stack Developer</div>
+                    <div class="company">Future Media Company</div>
+                    <div class="date-location">October 2024 – Present | Riyadh, Saudi Arabia</div>
+                    <div class="description">Full stack developer using .NET and Angular</div>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="job-title">Full Stack Developer</div>
+                    <div class="company">Matrixs Group Company</div>
+                    <div class="date-location">April 2024 – October 2024 | Taif, Saudi Arabia</div>
+                    <div class="description">Full stack developer using .NET and Angular</div>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="job-title">ITI Full Stack Developer</div>
+                    <div class="company">Information Technology Institute</div>
+                    <div class="date-location">February 2023 – July 2023 | Assiut, Egypt</div>
+                    <div class="description">Studied full stack web development using MEARN stack at Information Technology Institute (ITI)</div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Projects</h2>
+                
+                <div class="project-item">
+                    <div class="job-title">Bookify Website</div>
+                    <div class="date-location">September 2023 – November 2023</div>
+                    <div class="description">Books website developed using .NET 7 web development framework</div>
+                </div>
+                
+                <div class="project-item">
+                    <div class="job-title">ITI Graduation Project - African Ecommerce</div>
+                    <div class="date-location">E-commerce Website</div>
+                    <div class="description">
+                        Built using Angular, Angular Material, Bootstrap, Express.js, and Node.js<br>
+                        <a href="https://github.com/Salah0123/ITI-Graduation-Project-Angular-Nodejs" class="github-link" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+                
+                <div class="project-item">
+                    <div class="job-title">Quiz Website</div>
+                    <div class="date-location">February 2023</div>
+                    <div class="description">
+                        Programming languages quiz application using HTML, CSS, JavaScript<br>
+                        <a href="https://github.com/Salah0123/Courses-Project" class="github-link" target="_blank">GitHub</a> | 
+                        <a href="https://salah0123.github.io/Courses-Project/main.html" class="github-link" target="_blank">Live Demo</a>
+                    </div>
+                </div>
+                
+                <div class="project-item">
+                    <div class="job-title">JavaScript Project</div>
+                    <div class="date-location">January 2023</div>
+                    <div class="description">
+                        Interactive web application using HTML5, CSS3, JavaScript<br>
+                        <a href="https://github.com/Salah0123/Javascript-project" class="github-link" target="_blank">GitHub</a> | 
+                        <a href="https://salah0123.github.io/Javascript-project/" class="github-link" target="_blank">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">HTML5</div>
+                    <div class="skill-item">CSS3</div>
+                    <div class="skill-item">JavaScript</div>
+                    <div class="skill-item">TypeScript</div>
+                    <div class="skill-item">C#</div>
+                    <div class="skill-item">Angular</div>
+                    <div class="skill-item">React.js</div>
+                    <div class="skill-item">Node.js</div>
+                    <div class="skill-item">Express.js</div>
+                    <div class="skill-item">Web API</div>
+                    <div class="skill-item">MVC</div>
+                    <div class="skill-item">Entity Framework</div>
+                    <div class="skill-item">SQL Server</div>
+                    <div class="skill-item">MongoDB</div>
+                    <div class="skill-item">LINQ</div>
+                    <div class="skill-item">Bootstrap</div>
+                    <div class="skill-item">SCSS</div>
+                    <div class="skill-item">Responsive Design</div>
+                    <div class="skill-item">GitHub</div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Certificates</h2>
+                <div class="certificates-grid">
+                    <div class="certificate-item">
+                        <div class="certificate-name">MongoDB Introduction</div>
+                        <div class="certificate-provider">MongoDB</div>
+                    </div>
+                    <div class="certificate-item">
+                        <div class="certificate-name">JavaScript Projects</div>
+                        <div class="certificate-provider">Mahara-Tech</div>
+                    </div>
+                    <div class="certificate-item">
+                        <div class="certificate-name">Getting Started as a Freelancer</div>
+                        <div class="certificate-provider">Upwork</div>
+                    </div>
+                    <div class="certificate-item">
+                        <div class="certificate-name">Learn HTML & CSS</div>
+                        <div class="certificate-provider">Mahara-Tech</div>
+                    </div>
+                    <div class="certificate-item">
+                        <div class="certificate-name">Introduction to JavaScript</div>
+                        <div class="certificate-provider">SoloLearn</div>
+                    </div>
+                    <div class="certificate-item">
+                        <div class="certificate-name">Frontend Development HTML</div>
+                        <div class="certificate-provider">Mahara-Tech</div>
+                    </div>
+                    <div class="certificate-item">
+                        <div class="certificate-name">Frontend Development CSS</div>
+                        <div class="certificate-provider">Mahara-Tech</div>
+                    </div>
+                    <div class="certificate-item">
+                        <div class="certificate-name">Getting Started as a Freelancer</div>
+                        <div class="certificate-provider">Mostaql & Khamsat</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Languages</h2>
+                <div class="languages">
+                    <div class="language-item">
+                        <div class="language-name">Arabic</div>
+                        <div class="language-level">Native</div>
+                    </div>
+                    <div class="language-item">
+                        <div class="language-name">English</div>
+                        <div class="language-level">Good</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Education</h2>
+                <div class="education-item">
+                    <div class="job-title">Bachelor's Degree in Civil Engineering</div>
+                    <div class="company">Assiut University</div>
+                    <div class="date-location">September 2014 – August 2019 | Assiut, Egypt</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
